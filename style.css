@@ -1,0 +1,50 @@
+body{
+    background: #212121 !important;
+    color: #DEDEDE !important
+}
+/* HEADER */
+.profilePic{
+    width: 160px;
+    height: 160px;
+    /* background: url("https://randomuser.me/api/portraits/men/17.jpg") center; */
+    background: rgb(240, 240, 53);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 40px auto 10px auto;
+}
+header{
+    padding: 60px 0;
+}
+hr{
+    width: 60%;
+    color: #DEDEDE !important;
+    border-color: #DEDEDE !important;
+}
+
+/* WORKS */
+.imgContainer{
+    background: hotpink;
+    height: 146px;
+    overflow: hidden;
+}
+
+.imgContainer img{
+    width: 100%;
+}
+
+.progress-bar{
+    background: #DEDEDE !important;
+    color: #212121 !important;
+}
+
+.progress{
+    background: #444444 !important;
+}
+
+#socialMedia img{
+    width: 50px;
+}
+
+#contact img{
+    width:40px; 
+}
