@@ -1,50 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-    background: #212121 !important;
-    color: #DEDEDE !important
+
+}
+/* GENERAL */
+h2{
+    font-size: 20px !important;
+    text-transform: uppercase;
+}
+.separator{
+    width: 150px;
+    height: 2px;
+    background: #E5E5E5;
+    margin: 18px auto;
 }
 /* HEADER */
-.profilePic{
-    width: 160px;
-    height: 160px;
-    /* background: url("https://randomuser.me/api/portraits/men/17.jpg") center; */
-    background: rgb(240, 240, 53);
-    background-size: cover;
-    border-radius: 50%;
-    margin: 40px auto 10px auto;
-}
 header{
-    padding: 60px 0;
+    background: url("./img/Vector.png") no-repeat;
+    background-size: cover;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }
-hr{
-    width: 60%;
-    color: #DEDEDE !important;
-    border-color: #DEDEDE !important;
+.profilePic{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 10px;
+    color: rgb(29, 29, 29);
 }
 
 /* WORKS */
-.imgContainer{
-    background: hotpink;
-    height: 146px;
-    overflow: hidden;
+.photoBlock{
+    background: red;
+    width: 80%;
+    height: 100px;
+    margin: 20px 0;
 }
-
-.imgContainer img{
-    width: 100%;
-}
-
-.progress-bar{
-    background: #DEDEDE !important;
-    color: #212121 !important;
-}
-
-.progress{
-    background: #444444 !important;
-}
-
-#socialMedia img{
-    width: 50px;
-}
-
-#contact img{
-    width:40px; 
+#works .col-sm-6{
+    display: flex !important;
+    justify-content: center !important;
 }
