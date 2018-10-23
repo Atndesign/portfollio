@@ -6,6 +6,10 @@ body{
 
 }
 /* GENERAL */
+a{
+    text-decoration: none;
+    color: black !important;
+}
 h2{
     font-size: 20px !important;
     text-transform: uppercase;
@@ -26,10 +30,14 @@ header{
     text-align: center;
 
 }
+header h3{
+    font-size: 20px;
+}
 .profilePic{
     width: 100px;
     height: 100px;
-    background: red;
+    background: url("https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg") no-repeat;
+    background-size: cover;
     border-radius: 50%;
     margin: 15px 0;
 }
@@ -41,12 +49,30 @@ nav ul li{
 
 /* WORKS */
 .photoBlock{
-    background: red;
-    width: 80%;
+    width: 100%;
     height: 100px;
     margin: 20px 0;
 }
 #works .col-sm-6{
     display: flex !important;
     justify-content: center !important;
+}
+#works .photoBlock img{
+    height: 100%;
+}
+.photoBlock{
+    cursor: pointer;
+}
+#skills h6{
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 720px){
+    .profilePic{
+        width: 150px;
+        height: 150px;
+    }
+    .container{
+        padding: 0 120px !important;
+    }
 }
