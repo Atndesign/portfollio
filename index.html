@@ -61,7 +61,7 @@
         <!-- PP -->
         <div class="profilePic">
         </div>
-        <h1>Moulun kevin</h1>
+        <h1>Kevin Moulun</h1>
         <h3>Developpeur web junior</h3>
         <h6>En recherche de stage a partir de fevrier</h6>
     </header>
@@ -126,6 +126,7 @@
                 <img class="skillsImg" src="./img/icons/js800.png" class="">
                 <img class="skillsImg" src="./img/icons/bootstrap800.png" class="">
                 <img class="skillsImg" src="./img/icons/jquery800.png" class="">
+                <img class="skillsImg" src="./img/icons/git.png" class="">
             </div>
         </div>
     </section>
@@ -146,9 +147,9 @@
             <div class="separator"></div>
             <h2 class="text-center">Mes loisirs</h2>
             <div class="row">
-                <i class="fas fa-music col-xs-4"></i>
-                <i class="fas fa-pen-nib col-xs-4"></i>
-                <i class="fas fa-gamepad col-xs-4"></i>
+                <i class="fas fa-music col-xs-4 skillsImg"></i>
+                <i class="fas fa-pen-nib col-xs-4 skillsImg"></i>
+                <i class="fas fa-gamepad col-xs-4 skillsImg"></i>
             </div>
 
         </div>
@@ -156,33 +157,53 @@
     <section id="contact" class="beige">
         <div class="container">
             <div class="separator"></div>
-            <h2 class="text-center">Contact me</h2>
-            <form class="col-sm-6">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Adresse email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Votre email">
+            <h2 class="text-center">Contactez moi</h2>
+            <div class="row">
+                <form class="col-sm-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Adresse email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Votre email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Votre nom</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Objet</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Objet">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Message</label>
+                        <textarea class="form-control" id="exampleInputPassword1" placeholder="Dites moi ce dont vous avez besoin"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Envoyer</button>
+                </form>
+                <div class="contactIcons col-sm-6">
+                    <table class="coordonnees">
+                        <tr>
+                            <td>
+                                <i class="fas fa-phone"></i></td>
+                            <td>
+                                <p>07.70.36.27.93</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fas fa-envelope"></i></td>
+                            <td>
+                                <p><a href="mailto:kmoulun@popschool.eu.com">kmoulun@popschool.eu.com</a></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="aLink">
+                        <a href="https://github.com/Atndesign" target="_blank"><img src="./img/github-logo.png" alt=""></a>
+                        <a href="https://github.com/Atndesign" target="_blank"><img src="./img/icons/linkedin-brands.svg" alt=""></a>
+                    </div>
+
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Votre nom</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Votre nom">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Objet</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Objet">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Request</label>
-                    <textarea class="form-control" id="exampleInputPassword1" placeholder="What do you need?"></textarea>
-                </div>
-                <button type="submit" class="btn btn-danger">Envoyer</button>
-            </form>
-            <div class="contactIcons">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
             </div>
         </div>
     </section>

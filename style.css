@@ -127,6 +127,41 @@ nav{
     font-size: 30px;
     padding: 20px;
 }
+/* CONTACT */
+#contact .fas{
+    margin: 0 20px 0 0;
+    font-size: 20px !important;
+}
+#contact table{
+    margin: 20px 0;
+}
+#contact label{
+    font-weight: 600;
+}
+#contact .fas, #contact p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.aLink{
+    display: flex;
+    justify-content: space-around;
+}
+.aLink a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aLink img{
+    margin: 0 25px 0 0;
+    width: 60px;
+}
+.coordonnees td{
+    vertical-align: middle;
+    padding: 10px 0;
+}
+.coordonnees p{
+    margin: 0;
+}
 /* Footer */
 footer{
     background: #FFDC97;
@@ -175,5 +210,16 @@ footer{
     }
     .separator{
         width: 350px;
+    }
+    #contact .fas, #contact p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #contact table{
+        margin: 0;
+    }
+    .aLink{
+        display: flex;
+        justify-content: flex-start;
     }
 }
