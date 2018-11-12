@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/hover.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="boostrap.min.css">
+    <link rel="stylesheet" href="./css/boostrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -38,32 +40,32 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link hvr-underline-from-center" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">A propos</a>
+                        <a class="nav-link hvr-underline-from-center" href="#about">A propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#works">Mes projets</a>
+                        <a class="nav-link hvr-underline-from-center" href="#works">Mes projets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Mes competences</a>
+                        <a class="nav-link hvr-underline-from-center" href="#skills">Mes competences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#formations">Mes Formations</a>
+                        <a class="nav-link hvr-underline-from-center" href="#formations">Mes Formations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contactez moi</a>
+                        <a class="nav-link hvr-underline-from-center" href="#contact">Contactez moi</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <!-- PP -->
-        <div class="profilePic">
+        <div class="profilePic animated fadeInUp">
         </div>
-        <h1>Kevin Moulun</h1>
-        <h3>Developpeur web junior</h3>
-        <h6>En recherche de stage a partir de fevrier</h6>
+        <h1 class="animated fadeInUp delay-1s">Kevin Moulun</h1>
+        <h3 class="animated fadeInUp delay-1s">Developpeur web junior</h3>
+        <h6 class="animated fadeInUp delay-1s">En recherche de stage a partir de fevrier 2019</h6>
     </header>
     <section id="about">
         <div class="container text-center">
@@ -86,21 +88,37 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
                     <div class="photoBlock">
+                        <div class="overlay">
+                            <h4>Fake Twitter</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos magni</p>
+                        </div>
                         <img src="./img/oooo.png" alt="">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="photoBlock">
+                            <div class="overlay">
+                                    <h4>The reader</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos magni</p>
+                                </div>
                         <img src="./img/theReader.png" alt="">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="photoBlock">
+                            <div class="overlay">
+                                    <h4>Portfollio boostrap</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos magni</p>
+                                </div>
                         <img src="./img/bootStrap.png" alt="">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="photoBlock">
+                            <div class="overlay">
+                                    <h4>Responsive</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos magni</p>
+                                </div>
                         <img src="./img/phone.png" alt="">
                     </div>
                 </div>
@@ -135,12 +153,12 @@
         <div class="container">
             <div class="separator"></div>
             <h2 class="text-center">Mes formations</h2>
-            <p class="text-left">2018: Formation professionel a <i>POPSchool</i> en tant que developpeur junior<p>
+            <p class="text-left"><span class="time">10/2018</span>: Formation professionel en tant que developpeur junior | <span class="lob">POPSchool</span> <p>
                     <!-- <div class="separator"></div> -->
-                    <p class="text-left">Juin 2017: Formation technicien d'assistance informatique a <i>l'afpa</i></p>
+                    <p class="text-left"><span class="time">06/2017</span>: Formation technicien d'assistance informatique | <span class="lob">Afpa</span></p>
                     <!-- <div class="separator"></div> -->
-                    <p class="text-left">2014 - 2015: Formation professionel technicien reseau et telecom en entreprise
-                        a <i>l'afpa</i></p>
+                    <p class="text-left"><span class="time">2014-2015</span>: Formation professionel technicien reseau et telecom en entreprise
+                       | <span class="lob">Afpa</span></p>
         </div>
     </section>
     <section id="loisirs">
@@ -180,7 +198,7 @@
                         <label for="exampleInputPassword1">Message</label>
                         <textarea class="form-control" id="exampleInputPassword1" placeholder="Dites moi ce dont vous avez besoin"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-danger">Envoyer</button>
+                    <button type="submit" class="btn submit">Envoyer</button>
                 </form>
                 <div class="contactIcons col-sm-6">
                     <table class="coordonnees">
@@ -201,7 +219,8 @@
                     </table>
                     <div class="aLink">
                         <a href="https://github.com/Atndesign" target="_blank"><img src="./img/github-logo.png" alt=""></a>
-                        <a href="https://www.linkedin.com/in/kevin-moulun-233b64174/" target="_blank"><img src="./img/icons/linkedin-brands.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/kevin-moulun-233b64174/" target="_blank"><img src="./img/icons/linkedin-brands.svg"
+                                alt=""></a>
                     </div>
 
                 </div>
