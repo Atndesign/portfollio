@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
@@ -31,7 +33,7 @@
     <header id="home">
         <!-- NAV -->
         <nav id="navbarSpy" class="navbar navbar-light fixed-top navbar-expand-lg customNav">
-            <a class="navbar-brand" href="#">MK</a>
+            <a class="navbar-brand lob" href="#">MK</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -67,7 +69,7 @@
         <h3 class="animated fadeInUp delay-1s">Developpeur web junior</h3>
         <h6 class="animated fadeInUp delay-1s">En recherche de stage a partir de fevrier 2019</h6>
     </header>
-    <section id="about">
+    <section id="about"  data-aos="fade-down">
         <div class="container text-center">
 
             <div class="separator">
@@ -87,82 +89,126 @@
             <h2>Mes projets</h2>
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
-                    <div class="photoBlock">
+                    <div class="photoBlock" data-aos="flip-up" data-aos-delay="100">
                         <div class="overlay">
                             <h4>Fake Twitter</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos magni</p>
+                            <p>Ce projet consisté a reproduire une maquette donné</p>
                         </div>
                         <img src="./img/oooo.png" alt="">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <div class="photoBlock">
-                            <div class="overlay">
-                                    <h4>The reader</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos magni</p>
-                                </div>
+                    <div class="photoBlock" data-aos="flip-up" data-aos-delay="200">
+                        <div class="overlay">
+                            <h4>The reader</h4>
+                            <p>Ce projet consisté a reproduire une maquette donné</p>
+                        </div>
                         <img src="./img/theReader.png" alt="">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <div class="photoBlock">
-                            <div class="overlay">
-                                    <h4>Portfollio boostrap</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos magni</p>
-                                </div>
+                    <div class="photoBlock" data-aos="flip-up" data-aos-delay="300">
+                        <div class="overlay">
+                            <h4>Portfollio boostrap</h4>
+                            <p>Ce projet consisté a reproduire une maquette donné</p>
+                        </div>
                         <img src="./img/bootStrap.png" alt="">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <div class="photoBlock">
-                            <div class="overlay">
-                                    <h4>Responsive</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos magni</p>
-                                </div>
+                    <div class="photoBlock" data-aos="flip-up" data-aos-delay="400">
+                        <div class="overlay">
+                            <h4>Responsive</h4>
+                            <p>Ce projet consisté a reproduire une maquette donné et le rendre responvise</p>
+                        </div>
                         <img src="./img/phone.png" alt="">
                     </div>
                 </div>
             </div>
+            <!-- ROW -->
+            <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="photoBlock" data-aos="flip-up" data-aos-delay="100">
+                            <div class="overlay">
+                                <h4>Chuck noris Fact</h4>
+                                <p>Generateur de chuck noris fact avec un fond qui change de couleur</p>
+                            </div>
+                            <img src="./img/chuck.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="photoBlock" data-aos="flip-up" data-aos-delay="200">
+                            <div class="overlay">
+                                <h4>Calculator</h4>
+                                <p>Une Calculatrice realise avec la manipulation du DOM</p>
+                            </div>
+                            <img src="./img/calc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="photoBlock" data-aos="flip-up" data-aos-delay="300">
+                            <div class="overlay">
+                                <h4>Pomodoro</h4>
+                                <p>Un timer Pomodoro qui est reglable</p>
+                            </div>
+                            <img src="./img/pomo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            
         </div>
     </section>
     <section id="skills">
         <div class="container text-center">
             <div class="separator"></div>
             <h2>Mes competences</h2>
-            <p>Graphic Design</p>
-            <div class="skillsContainer">
-                <img class="skillsImg" src="./img/icons/Photoshop.svg" class="Photoshop">
-                <img class="skillsImg" src="./img/icons/InDesign.svg" class="">
-                <img class="skillsImg" src="./img/icons/Experience Design.svg" class="">
-                <img class="skillsImg" src="./img/icons/Illustrator.svg" class="">
-                <img class="skillsImg" src="./img/icons/Premiere Pro.svg" class="">
-                <img class="skillsImg" src="./img/icons/figma.png" class="">
+            <div class="row">
+
+                <div class="skillsContainer" >
+                    <div class="col-sm-6">
+                        <p>Graphic Design</p>
+                        <img class="skillsImg" src="./img/icons/Photoshop.svg" data-aos="zoom-in "data-aos-delay="100">
+                        <img class="skillsImg" src="./img/icons/InDesign.svg"  data-aos="zoom-in" data-aos-delay="200">
+                        <img class="skillsImg" src="./img/icons/Experience Design.svg" data-aos="zoom-in" data-aos-delay="300">
+                        <img class="skillsImg" src="./img/icons/Illustrator.svg"  data-aos="zoom-in" data-aos-delay="400">
+                        <img class="skillsImg" src="./img/icons/Premiere Pro.svg"  data-aos="zoom-in" data-aos-delay="500">
+                        <img class="skillsImg" src="./img/icons/figma.png"  data-aos="zoom-in" data-aos-delay="600">
+                    </div>
+                    <div class="col-sm-6">
+
+                        <p>Developpement</p>
+                        <div class="skillsContainer">
+                            <img class="skillsImg" src="./img/icons/html800.png" data-aos="zoom-in" data-aos-delay="100">
+                            <img class="skillsImg" src="./img/icons/css800.png" data-aos="zoom-in" data-aos-delay="200">
+                            <img class="skillsImg" src="./img/icons/js800.png" data-aos="zoom-in" data-aos-delay="300">
+                            <img class="skillsImg" src="./img/icons/bootstrap800.png" data-aos="zoom-in" data-aos-delay="400">
+                            <img class="skillsImg" src="./img/icons/jquery800.png" data-aos="zoom-in" data-aos-delay="500">
+                            <img class="skillsImg" src="./img/icons/git.png" data-aos="zoom-in" data-aos-delay="600">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>Developpement</p>
-            <div class="skillsContainer">
-                <img class="skillsImg" src="./img/icons/html800.png" class="Photoshop">
-                <img class="skillsImg" src="./img/icons/css800.png" class="">
-                <img class="skillsImg" src="./img/icons/js800.png" class="">
-                <img class="skillsImg" src="./img/icons/bootstrap800.png" class="">
-                <img class="skillsImg" src="./img/icons/jquery800.png" class="">
-                <img class="skillsImg" src="./img/icons/git.png" class="">
-            </div>
+
         </div>
     </section>
     <section id="formations" class="beige">
-        <div class="container">
+        <div class="container" data-aos="fade-right">
             <div class="separator"></div>
             <h2 class="text-center">Mes formations</h2>
-            <p class="text-left"><span class="time">10/2018</span>: Formation professionel en tant que developpeur junior | <span class="lob">POPSchool</span> <p>
+            <p class="text-left"><span class="time">10/2018</span>: Formation professionel en tant que developpeur
+                junior | <span class="lob">POPSchool</span>
+                <p>
                     <!-- <div class="separator"></div> -->
-                    <p class="text-left"><span class="time">06/2017</span>: Formation technicien d'assistance informatique | <span class="lob">Afpa</span></p>
+                    <p class="text-left"><span class="time">06/2017</span>: Formation technicien d'assistance
+                        informatique | <span class="lob">Afpa</span></p>
                     <!-- <div class="separator"></div> -->
-                    <p class="text-left"><span class="time">2014-2015</span>: Formation professionel technicien reseau et telecom en entreprise
-                       | <span class="lob">Afpa</span></p>
+                    <p class="text-left"><span class="time">2014-2015</span>: Formation professionel technicien reseau
+                        et telecom en entreprise
+                        | <span class="lob">Afpa</span></p>
         </div>
     </section>
     <section id="loisirs">
-        <div class="container">
+        <div class="container"  data-aos="fade-right">
             <div class="separator"></div>
             <h2 class="text-center">Mes loisirs</h2>
             <div class="row">
@@ -178,25 +224,25 @@
             <div class="separator"></div>
             <h2 class="text-center">Contactez moi</h2>
             <div class="row">
-                <form class="col-sm-6">
+                <form class="col-sm-6" method="POST" action="https://formspree.io/kmoulun@popschool.eu.com">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Adresse email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Votre email">
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Votre email" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Votre nom</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Votre nom">
+                        <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Votre nom" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Objet</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Objet">
+                        <input type="text" name="objet" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Objet" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Message</label>
-                        <textarea class="form-control" id="exampleInputPassword1" placeholder="Dites moi ce dont vous avez besoin"></textarea>
+                        <label for="exampleInputPassword1">Message</label>  
+                        <textarea class="form-control" name="message" id="exampleInputPassword1" placeholder="Dites moi ce dont vous avez besoin" required></textarea>
                     </div>
                     <button type="submit" class="btn submit">Envoyer</button>
                 </form>
@@ -268,7 +314,11 @@
                 }
             });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
