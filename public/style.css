@@ -48,9 +48,16 @@ header{
     color: white;
     background-size: cover;
     background-position-y: -60px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 
 }
@@ -68,7 +75,8 @@ header h3{
     background: url("./img/Kevin-200x300.jpg") no-repeat;
     background-size: cover;
     border-radius: 50%;
-    box-shadow: 10px 10px 8px 0px rgb(29, 29, 29,.1);
+    -webkit-box-shadow: 10px 10px 8px 0px rgb(29, 29, 29,.1);
+            box-shadow: 10px 10px 8px 0px rgb(29, 29, 29,.1);
     margin: 10px;
 }
 nav ul li{
@@ -80,13 +88,16 @@ nav ul li{
 
 .customNav{
     background: #ffb677 ;
-    box-shadow: 10px 10px 8px 0px rgb(29, 29, 29,.05);
+    -webkit-box-shadow: 10px 10px 8px 0px rgb(29, 29, 29,.05);
+            box-shadow: 10px 10px 8px 0px rgb(29, 29, 29,.05);
 }
 /* WORKS */
 .photoBlock{
     width: 200px;
     height: 200px;
     margin: 20px 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
     cursor: pointer;
     overflow: hidden;
@@ -98,6 +109,8 @@ nav ul li{
     overflow: hidden;
     height: 0%;
     background: rgba(252, 252, 252, 0.9);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 .photoBlock:hover .overlay{
@@ -115,8 +128,12 @@ nav ul li{
     font-family: "Lobster",cursive;
 }
 #works .col-sm-6{
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    justify-content: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
 }
 #works .photoBlock img{
     height: 100%;
@@ -127,18 +144,30 @@ nav ul li{
 }
 /* SKILLS */
 #skills .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; 
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;
 }
 #skills p{
     margin: 40px 0;
     font-family: "Lobster", cursive !important;
 }
 .skillsContainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .skillsContainer img{
     margin: 0 10px;
@@ -146,8 +175,12 @@ nav ul li{
 }
 /* LOISIR */
 #loisirs .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 #loisirs .fas{
     text-align: center;
@@ -171,13 +204,22 @@ nav ul li{
     font-weight: 600;
 }
 .aLink{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .aLink a{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .aLink img{
     margin: 0 25px 0 0;
@@ -193,12 +235,16 @@ nav ul li{
 .submit{
     background: transparent;
     border: 2px solid white !important;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 .submit:hover{
     background: #242424;
     color: #E5E5E5;
     border: none;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 /* Footer */
@@ -209,21 +255,36 @@ footer{
     margin-top: 20px; 
 }
 .fa-chevron-up{
-    animation: chevron 1s infinite linear;
+    -webkit-animation: chevron 1s infinite linear;
+            animation: chevron 1s infinite linear;
     margin: 0 10px;
 }
 .fa-chevron-down{
-    animation: chevron 1s infinite linear;
+    -webkit-animation: chevron 1s infinite linear;
+            animation: chevron 1s infinite linear;
     margin: 40px 10px;
     color: white;
 }
 
-@keyframes chevron{
+@-webkit-keyframes chevron{
     0%,100%{
-        transform: translateY(-5px) ;
+        -webkit-transform: translateY(-5px) ;
+                transform: translateY(-5px) ;
     }
     50%{
-        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+}
+
+@keyframes chevron{
+    0%,100%{
+        -webkit-transform: translateY(-5px) ;
+                transform: translateY(-5px) ;
+    }
+    50%{
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
     }
 }
 @media screen and (min-width: 720px){
@@ -236,15 +297,22 @@ footer{
         width: 100%;
     }
     nav ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         width: 100%;
         background: #ffb677 !important;
     }
     .nav-item a{
+        -webkit-transition: .1s;
+        -o-transition: .1s;
         transition: .1s
     }
     .nav-item a:hover{
+        -webkit-transition: .1s;
+        -o-transition: .1s;
         transition: .1s;
     }
     form{
@@ -261,7 +329,11 @@ footer{
         margin: 0;
     }
     .aLink{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 }
