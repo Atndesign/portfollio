@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/hover.css">
     <!-- Bootstrap -->
@@ -34,39 +34,39 @@
         <!-- NAV -->
         <nav id="navbarSpy" class="navbar navbar-light fixed-top navbar-expand-lg customNav">
             <a class="navbar-brand lob" href="#">MK</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link hvr-underline-from-center" href="#home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-center" href="#about">A propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-center" href="#works">Mes projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-center" href="#skills">Mes competences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-center" href="#formations">Mes Formations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvr-underline-from-center" href="#contact">Contactez moi</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link hvr-underline-from-center" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-center" href="#about">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-center" href="#works">Mes projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-center" href="#skills">Mes competences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-center" href="#formations">Mes Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-center" href="#contact">Contactez moi</a>
+                        </li>
+                    </ul>
             </div>
         </nav>
         <!-- PP -->
         <div class="profilePic animated fadeInUp"></div>    
         <h1 class="animated fadeInUp delay-1s">Kevin Moulun</h1>
         <h3 class="animated fadeInUp delay-1s">Developpeur web junior</h3>
-        <h6 class="animated fadeInUp delay-1s">En recherche de stage a partir de fevrier 2019</h6>
+        <h6 class="animated fadeInUp delay-1s">Stagiaire chez Prestarocket</h6>
         <a href="#about"><i class="fas fa-chevron-down"></i></a>
     </header>
     <section id="about"  data-aos="fade-down">
@@ -197,20 +197,22 @@
         </div>
     </section>
     <section id="formations" class="beige">
-        <div class="container" data-aos="fade-right">
+        <div class="container formations__container" data-aos="fade-right">
             <div class="separator"></div>
             <h2 class="text-center">Mes formations</h2>
+            <div>
             <p class="text-left"><span class="time">10/2018</span>: Formation professionel en tant que developpeur
                 junior | <span class="lob">POPSchool</span>
                 <p>
-                    <!-- <div class="separator"></div> -->
-                    <p class="text-left"><span class="time">06/2017</span>: Formation technicien d'assistance
-                        informatique | <span class="lob">Afpa</span></p>
-                    <!-- <div class="separator"></div> -->
-                    <p class="text-left"><span class="time">2014-2015</span>: Formation professionel technicien reseau
-                        et telecom en entreprise
-                        | <span class="lob">Afpa</span></p>
-        </div>
+                <!-- <div class="separator"></div> -->
+                <p class="text-left"><span class="time">06/2017</span>: Formation technicien d'assistance
+                    informatique | <span class="lob">Afpa</span></p>
+                <!-- <div class="separator"></div> -->
+                <p class="text-left"><span class="time">2014-2015</span>: Formation professionel technicien reseau
+                    et telecom en entreprise
+                <span class="lob">Afpa</span></p>
+                </div>
+            </div>
     </section>
     <section id="loisirs">
         <div class="container"  data-aos="fade-right">
@@ -251,9 +253,9 @@
                     </div>
                     <button type="submit" class="btn submit">Envoyer</button>
                 </form>
-                <div class="contactIcons col-sm-6">
+                <div class="contactIcons offset-1 col-sm-5">
                     <table class="coordonnees">
-                        <tr>
+                        <tr class="coordonees__top-row">
                             <td>
                                 <i class="fas fa-envelope"></i></td>
                             <td>
