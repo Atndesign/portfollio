@@ -45,6 +45,7 @@ header{
     padding: 80px 0;
     margin: 50px 0;
     background: url("./img/blake-connally-435076-unsplash.jpg") no-repeat center;
+    background-attachment: fixed;
     color: white;
     background-size: cover;
     background-position-y: -60px;
