@@ -1,1 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./_partials/fonts";
+@import "./_partials/variables";
+
+//Components
+@import "./components/header.scss";
