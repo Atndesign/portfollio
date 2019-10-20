@@ -45,6 +45,7 @@ header{
     padding: 80px 0;
     margin: 50px 0;
     background: url("./img/blake-connally-435076-unsplash.jpg") no-repeat center;
+    background-attachment: fixed;
     color: white;
     background-size: cover;
     background-position-y: -60px;
@@ -173,6 +174,13 @@ nav ul li{
     margin: 0 10px;
     height: 60px;
 }
+
+/* Fomations */
+.formations__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* LOISIR */
 #loisirs .row{
     display: -webkit-box;
@@ -227,7 +235,11 @@ nav ul li{
 }
 .coordonnees td{
     vertical-align: middle;
-    padding: 10px 0;
+    padding-bottom: 30px;
+}
+.coordonees__top-row{
+    display: flex;
+    align-items: center;
 }
 .coordonnees p{
     margin: 0;
@@ -332,8 +344,6 @@ footer{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        justify-content: flex-start;
     }
 }
