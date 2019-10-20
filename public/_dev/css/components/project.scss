@@ -1,0 +1,14 @@
+.project-container{
+    position: relative;
+    margin-bottom: $spacer;
+    height: 310px;
+    a{
+        position: absolute;
+        padding: (8 / 16) * $spacer (36 / 16) * $spacer;
+        background: white;
+        color: $primary;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

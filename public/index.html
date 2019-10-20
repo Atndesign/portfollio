@@ -28,20 +28,55 @@
 </head>
 
 <body>
-    <header id="home">
+    <header class="header" id="home">
         <nav>
             
         </nav>
         <div class="hero">
-            <div class="content">
-                <div class="profilepic"></div>
-                <h1 class="name">Kevin Moulun</h1>
+            <div class="container">
+                <div class="content">
+                    <div class="profilepic"></div>
+                    <h1 class="name">Kevin Moulun</h1>
+                    <p class="surtitle">Developpeur web junior</p>
+                    <a class="dl-btn" href="./CVMoulunKevin.pdf" download>Mon cv</a>
+                </div>
             </div>
         </div>
     </header>
-    <section id="About"></section>
-    <section id="projects"></section>
-    <section id="Contact"></section>
+    <section class="section about" id="About">
+        <div class="container">
+            <h2 class="section-title">A propos</h2>
+            <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea ex dicta repellat, ipsam debitis, facere earum quasi accusamus rem molestiae aspernatur doloremque quaerat dolorum blanditiis vero quia facilis quas veritatis.</p>
+        </div>
+    </section>
+    <section class="section --white" id="projects">
+        <div class="container">
+            <h2 class="section-title --black">Mes realisations</h2>
+             <div class="row">
+                <div class="col-lg-4 col-md-2">
+                    <div class="project-container" style="background-image: url('./img/discordBot.jpg');">
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-2">
+                    <div class="project-container" style="background-image: url('./img/memory.jpg');">
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-2">
+                    <div class="project-container" style="background-image: url('./img/discordBot.jpg');">
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="Contact">
+        <div class="container">
+           
+            <h2 class="section-title">A propos</h2>
+        </div>
+    </section>
     <footer>
         &copy; Moulun Kevin 2018 <a href="#home"><i class="fas fa-chevron-up"></i></a>
     </footer>
