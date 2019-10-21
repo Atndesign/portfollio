@@ -28,9 +28,24 @@
 </head>
 
 <body>
-    <header class="header" id="home">
-        <nav>
-            
+        <button type="button" class="modal-btn" data-toggle="modal" data-target="#offcanvas">Voir le projet</button>
+        <header class="header" id="home">
+        <nav class="nav-top">
+                <ul class="nav-menu">
+                        <li class="nav-menu-item">
+                            <a class="btn btn-link" href="#home">Acceuil</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="btn btn-link" href="#About">A propos</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="btn btn-link" href="#projects">Mes realisations</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="btn btn-link" href="#Contact">Contactez moi</a>
+                        </li>
+                        
+                    </ul>
         </nav>
         <div class="hero">
             <div class="container">
@@ -55,34 +70,164 @@
              <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="project-container" style="background-image: url('./img/discordBot.jpg');">
-                        <a href="#">Voir le projet</a>
+                        <button type="button" class="modal-btn" data-toggle="modal" data-target="#pomo">Voir le projet</button>
                     </div>
+                    <!-- modal -->
+                    <div class="modal fade" id="pomo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="img-fluid" src="./img/pomo.jpg" alt="pomodoro">
+                                        </div>
+                                        <div class="col-lg-6"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of modal -->
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="project-container" style="background-image: url('./img/memory.jpg');">
-                        <a href="#">Voir le projet</a>
+                        <button type="button" class="modal-btn" data-toggle="modal" data-target="#pomo">Voir le projet</button>
                     </div>
+                    <!-- modal -->
+                    <div class="modal fade" id="pomo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="img-fluid" src="./img/pomo.jpg" alt="pomodoro">
+                                        </div>
+                                        <div class="col-lg-6"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of modal -->
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="project-container" style="background-image: url('./img/discordBot.jpg');">
-                        <a href="#">Voir le projet</a>
+                    <div class="project-container" style="background-image: url('./img/todolist.jpg');">
+                        <button type="button" class="modal-btn" data-toggle="modal" data-target="#pomo">Voir le projet</button>
                     </div>
+                    <!-- modal -->
+                    <div class="modal fade" id="pomo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <img class="img-fluid" src="./img/pomo.jpg" alt="pomodoro">
+                                            </div>
+                                            <div class="col-lg-6"></div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of modal -->
                 </div>
                 <!-- Second row -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="project-container" style="background-image: url('./img/discordBot.jpg');">
-                        <a href="#">Voir le projet</a>
+                    <div class="project-container" style="background-image: url('./img/notepad.jpg');">
+                        <button type="button" class="modal-btn" data-toggle="modal" data-target="#pomo">Voir le projet</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="project-container" style="background-image: url('./img/memory.jpg');">
-                        <a href="#">Voir le projet</a>
+                    <div class="project-container" style="background-image: url('./img/chuck.jpg');">
+                        <button type="button" class="modal-btn" data-toggle="modal" data-target="#pomo">Voir le projet</button>
                     </div>
+                    <!-- modal -->
+                    <div class="modal fade" id="pomo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <img class="img-fluid" src="./img/pomo.jpg" alt="pomodoro">
+                                            </div>
+                                            <div class="col-lg-6"></div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of modal -->
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="project-container" style="background-image: url('./img/discordBot.jpg');">
-                        <a href="#">Voir le projet</a>
+                    <div class="project-container" style="background-image: url('./img/pomo.jpg');">
+                        <button type="button" class="modal-btn" data-toggle="modal" data-target="#pomo">Voir le projet</button>
                     </div>
+                    <!-- modal -->
+                    <div class="modal fade" id="pomo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="img-fluid" src="./img/pomo.jpg" alt="pomodoro">
+                                        </div>
+                                        <div class="col-lg-6"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of modal -->
                 </div>
             </div>
         </div>
@@ -120,6 +265,34 @@
     <footer>
         &copy; Moulun Kevin 2018 <a href="#home"><i class="fas fa-chevron-up"></i></a>
     </footer>
+     <!-- offcanvas menu -->
+     <div class="modal offcanvas-menu" id="offcanvas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                                <a href="#home">Acceuil</a>
+                            </li>
+                            <li>
+                                <a href="#About">A propos</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Mes realisations</a>
+                            </li>
+                            <li>
+                                <a href="#Contact">Contactez moi</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end offcanvas menu -->
 
     <script>
         // Select all links with hashes

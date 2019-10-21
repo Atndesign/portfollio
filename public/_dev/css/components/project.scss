@@ -2,7 +2,7 @@
     position: relative;
     margin-bottom: $spacer;
     height: 310px;
-    a{
+    .modal-btn{
         position: absolute;
         padding: (8 / 16) * $spacer (36 / 16) * $spacer;
         background: white;

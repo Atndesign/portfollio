@@ -1,8 +1,27 @@
 .header{
-
+}
+.nav-menu{
+    display: none;
+    list-style: none;
+    margin-bottom: 0;
+    
+    .nav-menu-item{
+        margin-right: $spacer;
+        a{
+            color: white;
+        }
+    }
+}
+.nav-top{
+    padding-top: (24 / 16) * $spacer;
+    padding-bottom: (24 / 16) * $spacer;
+    z-index: 99;
+    background-color: $primary;
+    position: fixed;
+    width: 100%;
 }
 .hero{
-    padding-top: (44 / 16) * $spacer;
+    padding-top: (144 / 16) * $spacer;
     padding-bottom: (12 / 16) * $spacer;
     background-image: url("../img/bg-hero.jpg");
     background-position-x: center;
@@ -50,5 +69,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: bottom;
+    }
+    .nav-menu{
+        display: flex;
     }
 }

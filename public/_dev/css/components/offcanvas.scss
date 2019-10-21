@@ -1,0 +1,31 @@
+.offcanvas-menu{
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: -1000px !important;
+    height: 100%;
+    background-color: white;
+    transition: .5s left ease-in;
+    &.show{
+        transition: .5s left ease-in;
+        left: 0px !important;
+        width: 80%;
+    }
+}
+.modal-content{
+    border: none !important;
+}
+button[data-target="#offcanvas"]{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 100;
+}
+@include media-breakpoint-up(md) {
+    button[data-target="#offcanvas"]{
+        display: none;
+    }
+    .offcanvas-menu{
+        display: none !important;
+    }
+}
