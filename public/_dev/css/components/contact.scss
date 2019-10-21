@@ -1,0 +1,50 @@
+.contact-label{
+    color: white;
+}
+.contact-input{
+    margin-bottom: $spacer;
+}
+.icons{
+    margin-top: (32 / 16) * $spacer;
+    .icon-container{
+        display: flex;
+        justify-content: center;
+
+        img{
+            margin-right: $spacer;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+footer{
+    background: $primary;
+    color: white;
+    text-align: center;
+    padding-bottom: $spacer;
+    .fa-chevron-up{
+        margin-left: $spacer / 2;
+        position: relative;
+        color: white;
+        animation: "chevron" 1s ease-in infinite;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .icons .icon-container{
+        justify-content: left;
+    }
+}
+
+
+@keyframes chevron{
+    0%,100%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 5px;
+    }
+}

@@ -6,26 +6,7 @@
         background-color: white;
     }
 }
-.section-title{
-    color: white;
-    font-family: $heading-font;
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: (18 / 16)  * $spacer;
-    
-    &.--black{
-        color: $primary;
-    }
-    &::after{
-        content: "";
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-        background-color: #525252;
-        height: 1px;
-        margin-top: (18 / 16)  * $spacer;
-    }
-}
+
 .about-text{
     color: white;
 }

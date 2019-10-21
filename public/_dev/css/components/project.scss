@@ -10,5 +10,11 @@
         bottom: 25px;
         left: 50%;
         transform: translateX(-50%);
+        
+        &:hover{
+            text-decoration: none;
+            color: white;
+            background-color: $primary;
+        }
     }
 }
