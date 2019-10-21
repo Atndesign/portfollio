@@ -1,5 +1,4 @@
-.header{
-}
+
 .nav-menu{
     display: none;
     list-style: none;
@@ -12,13 +11,18 @@
         }
     }
 }
-.nav-top{
-    padding-top: (24 / 16) * $spacer;
-    padding-bottom: (24 / 16) * $spacer;
-    z-index: 99;
-    background-color: $primary;
-    position: fixed;
-    width: 100%;
+.header{
+    .nav-top{
+        padding-top: (24 / 16) * $spacer;
+        padding-bottom: (24 / 16) * $spacer;
+        z-index: 99;
+        background-color: $primary !important;
+        position: fixed;
+        width: 100%;
+    }
+}
+.navbar-toggler{
+    z-index: 100;
 }
 .hero{
     padding-top: (144 / 16) * $spacer;
