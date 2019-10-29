@@ -9,6 +9,7 @@
         color: $primary;
         bottom: 25px;
         left: 50%;
+        border: none;
         transform: translateX(-50%);
         
         &:hover{
@@ -16,5 +17,35 @@
             color: white;
             background-color: $primary;
         }
+    }
+}
+.project__modal{
+    .control-wrapper{
+        margin-top: $spacer * 2;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .modal-btn{
+        padding: (8 / 16) * $spacer (20 / 16) * $spacer;
+        color: white;
+        background-color: $primary;
+        bottom: 25px;
+        border: none;
+        margin-right: $spacer ;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            color: $primary;
+            background: white;
+            text-decoration: none;
+        }
+    }
+    div.modal-dialog{
+        transform: translate(-50% , 50%) !important;
+    }
+    .modal-content{
+        width: 50vw;
+        height: 100%
     }
 }
