@@ -30,7 +30,7 @@
     }
     .modal-btn{
         padding: (8 / 16) * $spacer (20 / 16) * $spacer;
-        color: white;
+        color: white !important;
         background-color: $primary;
         bottom: 25px;
         border: none;
