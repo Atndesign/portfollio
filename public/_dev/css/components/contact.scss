@@ -6,15 +6,19 @@
 }
 .icons{
     margin-top: (32 / 16) * $spacer;
-    .icon-container{
+    .media-icons{
         display: flex;
         justify-content: center;
 
-        img{
+        .icon-container{
             margin-right: $spacer;
+            transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
 
             &:last-child{
                 margin-right: 0;
+            }
+            &:hover{
+                transform: scale(1.2);
             }
         }
     }
@@ -34,7 +38,7 @@ footer{
 }
 
 @include media-breakpoint-up(lg) {
-    .icons .icon-container{
+    .icons .media-icons{
         justify-content: left;
     }
 }
