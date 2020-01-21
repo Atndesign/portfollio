@@ -1,6 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./_partials/fonts";
 @import "./_partials/variables";
+@import "./_partials/responsive.scss";
 
 //Components
 @import "./components/header.scss";
@@ -9,6 +10,7 @@
 @import "./components/contact.scss";
 @import "./components/offcanvas.scss";
 @import "./components/tech.scss";
+@import "./_partials/responsiveClasses.scss";
 //common
 
 .section-title{
