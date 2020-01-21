@@ -29,69 +29,37 @@
 
 <body>
     <header class="header" id="home">
-        <nav class="nav-top navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="./img/bars-solid.png" alt="Bars" srcset="./img/bars-solid.svg">
-            </button>
-
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto nav-menu">
-                <li class="nav-menu-item nav-item active">
-                    <a class="btn btn-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-menu-item nav-item">
-                    <a class="btn btn-link" href="#About">A propos</a>
-                </li>
-                <li class="nav-menu-item nav-item">
-                    <a class="btn btn-link" href="#projects">Mes realisations</a>
-                </li>
-                <li class="nav-menu-item nav-item">
-                    <a class="btn btn-link" href="#Contact">Contactez moi</a>
-                </li>
-                <li class="nav-menu-item nav-item dropdown"></li>
-                </ul>
-                </form>
-            </div>
+        <nav class="nav">
+            <button class="offcanvas-toggler mobile-only"><img src="./img/icons/bars-solid.svg" alt="menu" height="16" width="16"></button>
+            <a class="header-logo-container" href="#"><img class="header-logo" src="./img/Logo.png" alt="Logo"></a>
         </nav>
-        
         <div class="hero">
-            <div class="container">
-                <div class="content">
-                    <div class="profilepic"></div>
-                    <h1 class="name">Kevin Moulun</h1>
-                    <p class="surtitle">Developpeur web junior</p>
-                    <a class="dl-btn" href="./CVMoulunKevin.pdf" download>Mon cv</a>
-                </div>
-            </div>
+            <img class="illustration" src="./img/homeIllustration.png" alt="home illustration">
+            <h1 class="title">Kevin Moulun</h1>
+            <p class="subtitle">Developpeur web junior</p>
+            <a class="header-cv-btn" href="./CVMoulunKevin.pdf" download="Kevin Moulun CV">Mon cv</a>
         </div>
     </header>
     <section class="section about" id="About">
         <div class="container">
             <h2 class="section-title">A propos</h2>
-            <p class="about-text">Bonjour je m'appelle Kevin, je suis un developpeur junior interessé par les technologies de toute sortes, mais aussi celle du web.</p>
-        </div>
-    </section>
-    <section class="section --white" id="projects">
-        <div class="container">
-            <h2 class="section-title --black">Les languages que je connais</h2>
-                <div class="icons-container">
-                    <img class="container-img" src="./img/icons/html800.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/js800.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/css800.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/git.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/phpLogo.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/sass.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/jquery800.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/Synfony.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/bootstrap800.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/javaLogo.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/React.png" height="100" alt="">
-                    <img class="container-img" src="./img/icons/NodeJs.png" height="100" alt="">
+            <div class="about-me">
+                <img class="about-img" src="./img/me.png" alt="me">
+                <div class="about-me-text-container">
+                    <p class="greeting">Hello !</p>
+                    <p class="about-me-text">Je m'appelle Kevin, je suis un developpeur junior passioné par les technologies de toute sortes, mais surtout celles du web.
+                        J’adore apprendre de nouvelles choses, de nouvelles choses technologies, experimenté egalement</p>
                 </div>
             </div>
+            
         </div>
     </section>
-    <section class="section --white" id="projects">
+    <section class="section projects" id="projects">
+        <div class="container">
+            
+        </div>
+    </section>
+    <section class="section" id="projects">
         <div class="container">
             <h2 class="section-title --black">Mes realisations</h2>
              <div class="row">
@@ -283,43 +251,10 @@
         </div>
     </section>
     <section class="section" id="Contact">
-        <h2 class="section-title">Contactez moi</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <form action="" method="post">
-                        <label class="contact-label" for="email">Entrez votre email</label>
-                        <br>
-                        <input class="contact-input form-control" placeholder="Entrez votre email" id="email" type="text">
-                        <label class="contact-label" for="email">Entrez votre nom</label>
-                        <br>
-                        <input class="contact-input form-control" placeholder="Entrez votre nom" id="email" type="text">
-                        <label class="contact-label" for="email">Objet</label>
-                        <br>
-                        <input class="contact-input form-control" placeholder="Veuillez indiquer l’objet de votre demande" id="email" type="text">
-                        <label class="contact-label" for="email">Message</label>
-                        <br>
-                        <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Dites moi ce dont vous avez besoin"></textarea>
-                    </form>
-                </div>
-                <div class="col-lg-6 icons">
-                    <div class="media-icons">
-                        <a class="icon-container" href="https://github.com/Atndesign/" target="_blank">
-                            <img class="icon" src="./img/github-brands 1.png" alt="github" srcset="./img/github-brands 1.svg" width="30" height="30">
-                        </a class="icon-container">
-                        <a class="icon-container" href="https://fr.linkedin.com/in/kevin-moulun-233b64174" target="_blank">
-                            <img class="icon" src="./img/linkdin.png" alt="linkdin" srcset="./img/linkdin.svg" width="30" height="30">
-                        </a>
-                        <a class="icon-container" href="mail:Moulun.kevinn@gmail.com">
-                            <img class="icon"  src="./img/mail.png" alt="github" srcset="./img/mail.svg" width="40" height="30">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </section>
     <footer>
-        &copy; Moulun Kevin 2018 <a href="#home"><i class="fas fa-chevron-up"></i></a>
+        <!-- &copy; Moulun Kevin 2018 <a href="#home"><i class="fas fa-chevron-up"></i></a> -->
     </footer>
      <!-- offcanvas menu -->
      <div class="modal offcanvas-menu" id="offcanvas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -349,7 +284,6 @@
             </div>
         </div>
         <!-- end offcanvas menu -->
-
     <script>
         // Select all links with hashes
         $('a[href*="#"]')

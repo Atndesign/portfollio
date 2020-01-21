@@ -1,13 +1,32 @@
-.section{
-    background-color: $primary;
-    padding-top: (31 / 16) * $spacer;
-    padding-bottom: (31 / 16) * $spacer;
-    &.--white{
-        background-color: white;
-    }
+.about{
+    background-image: url("../img/phoneSection.png") ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    height: 100%;
+    padding-top: 157px;
+    padding-bottom: $large-spacing;
 }
-
-.about-text{
+.about-me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-img{
+    margin-bottom: 50px;
+}
+.greeting{
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.about-me-text-container{
     text-align: center;
     color: white;
+    padding: 0 30px;
+}
+.about-me-text{
+    font-size: 18px;
+    line-height: 30px;
 }

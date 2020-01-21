@@ -1,24 +1,5 @@
-.project-container{
-    position: relative;
-    margin-bottom: $spacer;
-    height: 310px;
-    .modal-btn{
-        position: absolute;
-        padding: (8 / 16) * $spacer (36 / 16) * $spacer;
-        background: white;
-        color: $primary;
-        bottom: 25px;
-        left: 50%;
-        border: none;
-        transform: translateX(-50%);
-        
-        &:hover{
-            text-decoration: none;
-            color: white;
-            background-color: $primary;
-        }
-    }
-}
+
+
 .project__modal{
     .project-img{
         margin-bottom: $spacer;
