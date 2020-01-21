@@ -1,5 +1,11 @@
-
-
+.projects{
+    padding-top: $large-spacing;
+    padding-bottom: $large-spacing;
+    background-color: $primary;
+    .project-container{
+        height: 332px;
+    }
+}
 .project__modal{
     .project-img{
         margin-bottom: $spacer;

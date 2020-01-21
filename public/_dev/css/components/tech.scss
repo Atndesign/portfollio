@@ -1,0 +1,29 @@
+.tech{
+    padding-top: $large-spacing;
+    padding-bottom: $large-spacing;
+    .section-title{
+        margin-bottom: $tight-spacing;
+    }
+    .tech-cat{
+        margin-bottom: 60px;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .tech-container{
+       display: flex;
+       justify-content: center; 
+       flex-wrap: wrap;
+    }
+    .tech-icon{
+        margin-right: (26 / 16) * $spacer;
+    }
+    .row{
+        padding: 0 20px;
+    }
+    .col-4{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
