@@ -1,6 +1,9 @@
 .projects{
     padding-top: $large-spacing;
     padding-bottom: $large-spacing;
+    .row{
+        overflow-x: hidden;
+    }
     background-color: $primary;
     .project-container{
         height: 332px;
