@@ -24,3 +24,11 @@
         color: black;
     }
 }
+
+@include media-breakpoint-desktop{
+    .section-title{
+        font-size: 48px;
+        margin-bottom: (75 / 16) * $spacer;
+    }
+    
+}
