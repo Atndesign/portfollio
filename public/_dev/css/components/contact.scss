@@ -33,3 +33,25 @@
         width: 40px;
     }
 }
+
+@include media-breakpoint-desktop{
+    .contact{
+        .contact-medias{
+            padding-top: 20px;
+            display: flex;
+            justify-content: left;
+        }
+        .media-icons{
+            margin-left: 45px;
+            margin-right: 45px;
+            width: 60px;
+        }
+    }
+    footer{
+        text-align: center;
+        font-weight: bold;
+        i{
+            color: $primary;
+        }
+    }
+}
