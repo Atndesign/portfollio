@@ -1,9 +1,6 @@
 .tech{
     padding-top: $large-spacing;
     padding-bottom: $large-spacing;
-    .section-title{
-        margin-bottom: $tight-spacing;
-    }
     .tech-cat{
         margin-bottom: 60px;
         font-size: 24px;
@@ -25,5 +22,14 @@
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
+    }
+}
+
+@include media-breakpoint-desktop(){
+    .tech{
+        padding-top: 130px;
+    }
+    .col-4{
+        flex: 25.333333%;
     }
 }
