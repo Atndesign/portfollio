@@ -52,6 +52,9 @@
         display: flex;
         justify-content: space-around;
     }
+    .modal-title{
+        font-weight: bold;
+    }
     .modal-btn{
         text-align: center;
         padding: (8 / 16) * $spacer (20 / 16) * $spacer;
