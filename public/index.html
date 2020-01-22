@@ -30,7 +30,7 @@
 <body>
     <header class="header" id="home">
         <nav class="nav">
-            <button class="offcanvas-toggler mobile-only"><img src="./img/icons/bars-solid.svg" alt="menu" height="16" width="16"></button>
+            <button id="offcanvas-toggler" class="offcanvas-toggler mobile-only"><img src="./img/icons/bars-solid.svg" alt="menu" height="16" width="16"></button>
             <a class="header-logo-container" href="#"><img class="header-logo" src="./img/Logo.png" alt="Logo"></a>
             <ul class="nav-list desktop-only">
                 <a href="#">
@@ -291,7 +291,7 @@
                                             <p>Etant streamer sur la plateforme twitch, j'ai decidé de realiser un overlay en Javascript qui permeterait de representer chaque viewers en tant qu'avatar sur le stream</p>
                                             <div class="control-wrapper">
                                                 <button type="button" class="modal-btn" data-dismiss="modal"><i class="fas fa-times"></i> Fermer</button>
-                                                <a href="https://github.com/Atndesign/MooMooVerlay" type="button" class="modal-btn"><i class="fas fa-code"></i> Code</a>
+                                                <a href="https://github.com/Atndesign/MooMooVerlay" target="_blank" type="button" class="modal-btn"><i class="fas fa-code"></i> Code</a>
                                             </div>
                                         </div>
                                     </div>
@@ -324,7 +324,7 @@
                                             <p>Etant streamer sur la plateforme twitch, j'ai decidé de realiser un bot en Javascript qui permet de saluer chaque viewers via la commande !hi</p>
                                             <div class="control-wrapper">
                                                 <button type="button" class="modal-btn" data-dismiss="modal"><i class="fas fa-times"></i> Fermer</button>
-                                                <a href="https://github.com/Atndesign/PixelGreet" type="button" class="modal-btn"><i class="fas fa-code"></i> Code</a>
+                                                <a href="https://github.com/Atndesign/PixelGreet" target="_blank" type="button" class="modal-btn"><i class="fas fa-code"></i> Code</a>
                                             </div>
                                         </div>
                                     </div>
@@ -374,32 +374,25 @@
         &copy; Moulun Kevin 2018 <a href="#home"><i class="fas fa-chevron-up"></i></a>
     </footer>
      <!-- offcanvas menu -->
-     <div class="modal offcanvas-menu" id="offcanvas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                    <div class="modal-body">
-                        <ul>
-                            <li>
-                                <a href="#home">Acceuil</a>
-                            </li>
-                            <li>
-                                <a href="#About">A propos</a>
-                            </li>
-                            <li>
-                                <a href="#projects">Mes realisations</a>
-                            </li>
-                            <li>
-                                <a href="#Contact">Contactez moi</a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+     <div class="offcanvas-menu mobile-only" id="offcanvas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button id="offcanvas-close" type="button" class="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <ul class="nav-list">
+            <a href="#">
+                <li class="nav-item">Acceuil</li>
+            </a>
+            <a href="#about">
+                <li class="nav-item">A propos</li>
+            </a>
+            <a href="#projects">
+                <li class="nav-item">Mes realisations</li>
+            </a>
+            <a href="#contact">
+                <li class="nav-item">Contactez moi</li>
+            </a>
+        </ul>
+    </div>
         <!-- end offcanvas menu -->
     <script>
         // Select all links with hashes
@@ -439,7 +432,7 @@
             });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
     <script>
         AOS.init();
     </script>

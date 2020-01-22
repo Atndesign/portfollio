@@ -16,11 +16,18 @@
 }
 .nav-list{
     display: none;
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
+    }
 }
 .nav-item{
     color: black;
     &:hover{
         color: $primary;
+        text-decoration: none;
     }
 }
 .hero{
