@@ -39,7 +39,11 @@ class Contact extends Component {
             </div>
             <div className="col-lg-6">
               <div className="contact-medias">
-                <a target="_blank" href="https://github.com/Atndesign/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Atndesign/"
+                >
                   <img
                     className="media-icons"
                     src="./img/icons/github.png"
@@ -49,6 +53,7 @@ class Contact extends Component {
                 </a>
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.linkedin.com/in/kevin-moulun-233b64174/"
                 >
                   <img
@@ -58,7 +63,11 @@ class Contact extends Component {
                     srcSet="./img/icons/linkedin.svg"
                   ></img>
                 </a>
-                <a target="_blank" href="mail:moulun.kevinn@gmail.com">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mail:moulun.kevinn@gmail.com"
+                >
                   <img
                     className="media-icons"
                     src="./img/icons/mail.png"
