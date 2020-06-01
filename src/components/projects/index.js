@@ -44,12 +44,12 @@ class Projects extends Component {
   state = {};
   render() {
     return (
-      <section class="section projects" id="projects">
-        <div class="container">
-          <h2 class="section-title">Mes differentes realisations</h2>
-          <div class="row">
+      <section className="section projects" id="projects">
+        <div className="container">
+          <h2 className="section-title">Mes differentes realisations</h2>
+          <div className="row">
             {projectList.map((project) => (
-              <Project info={project} />
+              <Project info={project} key={project.id} />
             ))}
           </div>
         </div>

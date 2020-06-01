@@ -1,34 +1,40 @@
-.offcanvas-menu{
+.offcanvas-menu {
+    z-index: 100;
     position: fixed;
     display: block;
-    top: 0;    
-    left: -800px;
+    top: 0;
     transition: left 0.7s cubic-bezier(1, -0.03, 0.46, 0.96);
     width: 80%;
     height: 100%;
     background-color: white;
-    box-shadow: 20px 0 10px 0px rgba(0,0,0,0.1);
-    .close{
+    box-shadow: 20px 0 10px 0px rgba(0, 0, 0, 0.1);
+
+    .close {
         position: absolute;
         left: 40px;
         top: 30px;
     }
-    .nav-list{
+
+    .nav-list {
         display: flex;
         flex-direction: column;
         padding: 100px 40px;
         font-size: 1.2rem;
         list-style: none;
-        .nav-items{
+        text-align: left;
+
+        .nav-items {
             display: block;
             margin-bottom: 1.5rem;
         }
     }
 }
 
-.open-modal{
+.open-modal {
     left: 0px;
 }
-.modal-dialog,.modal-content{
+
+.modal-dialog,
+.modal-content {
     height: 100%;
 }

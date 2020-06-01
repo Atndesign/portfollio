@@ -4,18 +4,18 @@ class Project extends Component {
   render() {
     let { cover, title, id, description, link } = this.props.info;
     return (
-      <div class="col-lg-6 col-md-6 project-container">
+      <div className="col-lg-6 col-md-6 project-container">
         <div
           data-aos="fade-left"
-          class="project-container"
+          className="project-container"
           style={{ backgroundImage: `url(${cover})` }}
         >
-          <div class="overlay"></div>
+          <div className="overlay"></div>
           <div className="overlay__content">
-            <p class="project-title">{title}</p>
+            <p className="project-title">{title}</p>
             <button
               type="button"
-              class="modal-btn"
+              className="modal-btn"
               data-toggle="modal"
               data-target={`#${id}`}
             >
@@ -24,43 +24,43 @@ class Project extends Component {
           </div>
         </div>
         <div
-          class="modal fade project__modal"
+          className="modal fade project__modal"
           id={id}
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="row">
-                  <div class="col-lg-6">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-body">
+                <div className="row">
+                  <div className="col-lg-6">
                     <img
-                      class="project-img img-fluid"
+                      className="project-img img-fluid"
                       src={cover}
                       alt={title}
                     ></img>
                   </div>
-                  <div class="col-lg-6">
-                    <h2 class="modal-title">{title}</h2>
+                  <div className="col-lg-6">
+                    <h2 className="modal-title">{title}</h2>
                     <p>{description}</p>
-                    <div class="control-wrapper">
+                    <div className="control-wrapper">
                       <button
                         type="button"
-                        class="modal-btn"
+                        className="modal-btn"
                         data-dismiss="modal"
                       >
-                        <i class="fas fa-times"></i> Fermer
+                        <i className="fas fa-times"></i> Fermer
                       </button>
                       {link && (
                         <a
                           href={link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="modal-btn"
+                          className="modal-btn"
                         >
-                          <i class="fas fa-code"></i>Voir le projet
+                          <i className="fas fa-code"></i>Voir le projet
                         </a>
                       )}
                     </div>
