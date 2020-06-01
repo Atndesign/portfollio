@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-a;
 
 class Header extends Component {
   state = {};
