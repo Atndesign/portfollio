@@ -1,14 +1,28 @@
-.projects{
+.projects {
     padding-top: $large-spacing;
     padding-bottom: $large-spacing;
-    .row{
+
+    .row {
         overflow-x: hidden;
     }
+
     background-color: $primary;
-    .project-container{
+
+    .project-container {
+        position: relative;
         height: 332px;
     }
-    .overlay{
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .overlay__content {
+        position: relative;
+        z-index: 1;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -16,19 +30,22 @@
         justify-content: center;
     }
 }
-.project-container{
+
+.project-container {
     margin-bottom: 50px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.project-title{
+
+.project-title {
     text-align: center;
     font-size: 36px;
     color: white;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-.modal-btn{
+
+.modal-btn {
     color: black;
     background: white;
     border: none;
@@ -37,25 +54,37 @@
     font-size: 24px;
     text-transform: uppercase;
     padding: 20px 36px;
-    &:hover{
+
+    &:hover {
         color: $primary;
         background: white;
         text-decoration: none;
     }
 }
-.project__modal{
-    .project-img{
+
+.modal {
+    height: auto;
+}
+
+.project__modal {
+
+    .project-img {
         margin-bottom: $spacer;
     }
-    .control-wrapper{
+
+    .control-wrapper {
         margin-top: $spacer * 2;
         display: flex;
         justify-content: space-around;
     }
-    .modal-title{
+
+    .modal-title {
         font-weight: bold;
     }
-    .modal-btn{
+
+
+
+    .modal-btn {
         text-align: center;
         padding: (8 / 16) * $spacer (20 / 16) * $spacer;
         color: white !important;
@@ -63,53 +92,67 @@
         font-size: 1rem;
         bottom: 25px;
         border: none;
-        margin-right: $spacer ;
-        &:last-child{
+        margin-right: $spacer;
+
+        &:last-child {
             margin-right: 0;
         }
-        &:hover{
-            color: $primary;
+
+        &:hover {
+            color: $primary !important;
             background: white;
             text-decoration: none;
         }
     }
-    div.modal-dialog{
+
+    div.modal-dialog {
         display: flex;
         justify-content: center;
     }
-    .modal-content{
+
+    .modal-content {
         width: 90vw;
         height: 100%
     }
 }
-@include media-breakpoint-desktop(){
-    .project__modal{
-        .control-wrapper{
+
+@include media-breakpoint-desktop() {
+    .project__modal {
+        height: 100%;
+
+        .control-wrapper {
             margin-top: $spacer * 2;
             display: flex;
             justify-content: flex-start;
         }
-        .modal-btn{
+
+        .modal-btn {
             padding: (8 / 16) * $spacer (20 / 16) * $spacer;
             color: white;
             background-color: $primary;
             bottom: 25px;
             border: none;
-            margin-right: $spacer ;
-            &:last-child{
+            margin-right: $spacer;
+
+            &:last-child {
                 margin-right: 0;
             }
-            &:hover{
+
+            &:hover {
                 color: white;
                 background: lighten($primary, 50%);
                 text-decoration: none;
             }
         }
-        div.modal-dialog{
+
+        div.modal-dialog {
             display: block;
-            transform: translate(-50% , 50%) !important;
+            transform: translate(-50%, 50%) !important;
+            height: auto;
+
         }
-        .modal-content{
+
+        .modal-content {
             width: 50vw;
             height: 100%
         }
