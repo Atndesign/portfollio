@@ -6,12 +6,35 @@ import Projects from "./components/projects";
 import Contact from "./components/Contact";
 import "./App.css";
 
+let urls = [
+  {
+    label: "Home",
+    url: "#",
+  },
+  {
+    label: "A propos",
+    url: "#about",
+  },
+  {
+    label: "Les technologies",
+    url: "#tech",
+  },
+  {
+    label: "Mes realisations",
+    url: "#projects",
+  },
+  {
+    label: "contact",
+    url: "#contact",
+  },
+];
+
 function App() {
   let now = new Date();
   let year = now.getFullYear();
   return (
     <div className="App">
-      <Header />
+      <Header links={urls} />
       <AboutSection />
       <Skills />
       <Projects />

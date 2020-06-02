@@ -41,18 +41,11 @@ class Header extends Component {
             <img className="header-logo" src="./img/Logo.png" alt="Logo"></img>
           </a>
           <ul className="nav-list desktop-only">
-            <a href="#">
-              <li className="nav-item">Acceuil</li>
-            </a>
-            <a href="#about">
-              <li className="nav-item">A propos</li>
-            </a>
-            <a href="#projects">
-              <li className="nav-item">Mes realisations</li>
-            </a>
-            <a href="#contact">
-              <li className="nav-item">Contactez moi</li>
-            </a>
+            {this.props.links.map((link) => (
+              <a href={link.url}>
+                <li className="nav-item">{link.label}</li>
+              </a>
+            ))}
           </ul>
         </nav>
         <div className="hero">
@@ -73,9 +66,6 @@ class Header extends Component {
             </a>
           </div>
         </div>
-        <div className="mouse">
-          <div className="mouse-cursor"></div>
-        </div>
         <div
           className="offcanvas-menu mobile-only"
           id="offcanvas"
@@ -94,18 +84,11 @@ class Header extends Component {
             <span aria-hidden="true">&times;</span>
           </button>
           <ul className="nav-list">
-            <a href="#">
-              <li className="nav-item">Acceuil</li>
-            </a>
-            <a href="#about">
-              <li className="nav-item">A propos</li>
-            </a>
-            <a href="#projects">
-              <li className="nav-item">Mes realisations</li>
-            </a>
-            <a href="#contact">
-              <li className="nav-item">Contactez moi</li>
-            </a>
+            {this.props.links.map((link) => (
+              <a href={link.url}>
+                <li className="nav-item">{link.label}</li>
+              </a>
+            ))}
           </ul>
         </div>
       </header>
