@@ -4,6 +4,7 @@ class Header extends Component {
   state = {
     isOpen: true,
     width: 0,
+    scrollRate: 0,
   };
 
   modal() {
@@ -21,6 +22,23 @@ class Header extends Component {
       isOpen: newState,
     });
   }
+  paralax(e) {
+    let scrollDist = window.pageYOffset;
+    let rate = scrollDist * 0.4;
+    this.setState({
+      scrollRate: rate,
+    });
+    if (rate > window.innerHeight / 2) {
+      this.setState({
+        scrollRate: 0,
+      });
+    }
+  }
+  componentDidMount = () => {
+    if (matchMedia("(min-width: 900px)").matches) {
+      window.addEventListener("scroll", (e) => this.paralax(e));
+    }
+  };
   render() {
     return (
       <header className="header" id="home">
@@ -48,11 +66,13 @@ class Header extends Component {
             ))}
           </ul>
         </nav>
+        {/* Hero  */}
         <div className="hero">
           <img
             className="illustration"
             src="./img/homeIllustration.png"
             alt="home illustration"
+            style={{ transform: `translate(0,${this.state.scrollRate}px)` }}
           ></img>
           <div className="hero-text">
             <h1 className="title">Kevin Moulun</h1>
@@ -66,6 +86,10 @@ class Header extends Component {
             </a>
           </div>
         </div>
+        <div className="mouse">
+          <div className="mouse-cursor"></div>
+        </div>
+        {/* End of Hero */}
         <div
           className="offcanvas-menu mobile-only"
           id="offcanvas"
