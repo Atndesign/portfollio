@@ -55,7 +55,7 @@ class Header extends Component {
               width="16"
             ></img>
           </button>
-          <a className="header-logo-container" href="#">
+          <a className="header-logo-container" href="#home">
             <img className="header-logo" src="./img/Logo.png" alt="Logo"></img>
           </a>
           <ul className="nav-list desktop-only">
